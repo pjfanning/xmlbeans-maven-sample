@@ -20,11 +20,12 @@
       <plugin>
         <groupId>org.apache.xmlbeans</groupId>
         <artifactId>xmlbeans</artifactId>
-        <version>5.2.0</version>
+        <version>5.2.1-SNAPSHOT</version>
         <executions><execution><goals><goal>compile</goal></goals></execution></executions>
         <configuration>
           <!-- see https://xmlbeans.apache.org/guide/Maven.html for full list of config options -->
           <partialMethods>ALL,-GET_LIST,-XGET_LIST,-XGET_ARRAY</partialMethods>
+          <recurseSourceSubdirs>true</recurseSourceSubdirs>
           <verbose>true</verbose>
         </configuration>
         <dependencies>
@@ -47,7 +48,7 @@
     <dependency>
       <groupId>org.apache.xmlbeans</groupId>
       <artifactId>xmlbeans</artifactId>
-      <version>5.2.0</version>
+      <version>5.2.1-SNAPSHOT</version>
     </dependency>
   </dependencies>
 
